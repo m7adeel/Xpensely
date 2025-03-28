@@ -8,7 +8,7 @@ export default function Layout() {
     <Stack screenOptions={{
         headerShown: false
     }}>
-        <Stack.Screen name='/' />
+        <Stack.Screen name='index' />
     </Stack>
   )
 }

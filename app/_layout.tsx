@@ -9,6 +9,7 @@ export default function Layout() {
       }}>
         <Stack.Screen name='(auth)' />
         <Stack.Screen name='(tabs)' />
+        <Stack.Screen name='/add_expense' />
       </Stack>
   )
 }
