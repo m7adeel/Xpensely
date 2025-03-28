@@ -1,19 +1,9 @@
-import { Stack, Link } from 'expo-router';
+import { Redirect } from "expo-router";
+import React from "react";
 
-import { Button } from '~/components/Button';
-import { Container } from '~/components/Container';
-import { ScreenContent } from '~/components/ScreenContent';
 
+// Checking Store Logics will come over here
+// Splash Screens, Animations, Loading of Values etc
 export default function Home() {
-  return (
-    <>
-      <Stack.Screen options={{ title: 'Home' }} />
-      <Container>
-        <ScreenContent path="app/index.tsx" title="Home" />
-        <Link href={{ pathname: '/details', params: { name: 'Dan' } }} asChild>
-          <Button title="Show Details" />
-        </Link>
-      </Container>
-    </>
-  );
+  return Redirect({href: '/(auth)'})
 }
